@@ -507,7 +507,7 @@ void monitorButtons()
 	{
 		if (IsTimerReady())
 		{
-			if (CONTROLS::IS_DISABLED_CONTROL_PRESSED(0, Button_Square) && CONTROLS::IS_DISABLED_CONTROL_PRESSED(0, Button_Dpad_Right))
+			if (CONTROLS::IS_DISABLED_CONTROL_PRESSED(0, Button_Square) && CONTROLS::IS_DISABLED_CONTROL_PRESSED(0, Button_Dpad_Right_2))
 			{
 				submenu = Main_Menu;
 				submenuLevel = 0;
@@ -555,19 +555,19 @@ void monitorButtons()
 				}
 				playSound("NAV_UP_DOWN");
 			}
-			else if (CONTROLS::IS_DISABLED_CONTROL_JUST_PRESSED(0, Button_Dpad_Right))
+			else if (CONTROLS::IS_DISABLED_CONTROL_JUST_PRESSED(0, Button_Dpad_Right_2))
 			{
 				rightPress = true;
 			}
-			else if (CONTROLS::IS_DISABLED_CONTROL_JUST_PRESSED(0, Button_Dpad_Left))
+			else if (CONTROLS::IS_DISABLED_CONTROL_JUST_PRESSED(0, Button_Dpad_Left_2))
 			{
 				leftPress = true;
 			}
-			else if (CONTROLS::IS_DISABLED_CONTROL_PRESSED(0, Button_Dpad_Right))
+			else if (CONTROLS::IS_DISABLED_CONTROL_PRESSED(0, Button_Dpad_Right_2))
 			{
 				fastRightPress = true;
 			}
-			else if (CONTROLS::IS_DISABLED_CONTROL_PRESSED(0, Button_Dpad_Left))
+			else if (CONTROLS::IS_DISABLED_CONTROL_PRESSED(0, Button_Dpad_Left_2))
 			{
 				fastLeftPress = true;
 			}
